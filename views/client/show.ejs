@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <h2>Show Messenger</h2>
+    <a href="/">Messenger App</a>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Người Gửi</th>
+            <th>Người Nhận</th>
+            <th>Messenger</th>
+            <th>Time</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--<tr>-->
+            <!--<td>John</td>-->
+            <!--<td>Doe</td>-->
+            <!--<td>john@example.com</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>Mary</td>-->
+            <!--<td>Moe</td>-->
+            <!--<td>mary@example.com</td>-->
+        <!--</tr>-->
+
+            <% messenger.forEach(function(mes){ %>
+                <tr>
+                   <td><%= mes.nguoigui%></td>
+                    <td><%= mes.nguoinhan%></td>
+                    <td><%= mes.messenger%></td>
+                </tr>
+            <% }); %>
+
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
