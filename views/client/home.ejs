@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <a href="/show">Show Messenger</a>
-    <form action="/" method="post">
+    <form action="/" method="post" enctype="multipart/form-data">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="nguoigui">Người Gửi</label>
@@ -25,6 +25,10 @@
         <div class="form-group">
             <label for="inputAddress">Messenger</label>
             <textarea type="text" class="form-control" id="inputAddress" rows="5" cols="10" placeholder="Messenger...." name="messenger"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">thumbnail</label>
+            <input type="file" name="thumbnail">
         </div>
         <!--<div class="form-group">-->
             <!--<label for="inputAddress2">Address 2</label>-->

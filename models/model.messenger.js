@@ -4,6 +4,7 @@ var messenger = new mongoose.Schema({
     nguoigui: String,
     nguoinhan: String,
     messenger: String,
+    thumbnail: String,
     time: String
 });
 
